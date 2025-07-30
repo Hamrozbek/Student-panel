@@ -29,10 +29,9 @@ const Groups = () => {
                                             <p className="text-white">Age: {student.age}</p>
                                         </div>
                                     </div>
-                                    // <StudentCard key={student.id} item={student} />
                                 ))
                             ) : (
-                                <p className=" text-gray-300">No Students</p>
+                                <p className=" text-white">No Students</p>
                             )}
                         </div>
                     </div>
