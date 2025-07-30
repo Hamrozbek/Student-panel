@@ -34,7 +34,7 @@ export const teacherlist = [
 const Teachers = () => {
 
   return (
-    <div className="containers flex items-center justify-center gap-[20px] py-3">
+    <div className="containers md:flex space-y-[20px] items-center justify-center gap-[20px] py-3">
       {teacherlist.map(item => <TeacherCard key={item.id} item={item} />)}
     </div>
   )

@@ -13,10 +13,10 @@ const SengilTeacher = () => {
         <div>
             {/* Teacher Info */}
             <div className="flex justify-center">
-                <div className="cursor-pointer flex items-center gap-4 rounded-[15px] mt-4 px-4 py-2 bg-[#333333]">
-                    <img className="rounded-full w-[150px]" src={singleTeacherData.image} alt="teacher img" width={400} height={300}/>
+                <div className="cursor-pointer flex items-center gap-2 md:gap-4 rounded-[15px] mt-4 md:px-4 px-2 py-1 md:py-2 bg-[#333333]">
+                    <img className="rounded-full w-[80px] md:w-[150px]" src={singleTeacherData.image} alt="teacher img" width={400} height={300}/>
                     <div>
-                        <h2 className="text-white font-bold text-[18px]">{singleTeacherData.name} - {singleTeacherData.surname}</h2>
+                        <h2 className="text-white font-bold text-[15px] md:text-[18px]">{singleTeacherData.name} - {singleTeacherData.surname}</h2>
                         <p className="text-white">Email: {singleTeacherData.gmail}</p>
                         <p className="text-white font-semibold">Age: {singleTeacherData.age}</p>
                     </div>
@@ -25,8 +25,8 @@ const SengilTeacher = () => {
 
             {/* Student List */}
             <div className="pt-1">
-                <h2 className="text-center text-white text-[24px] font-bold pb-1">Students of {singleTeacherData.name}</h2>
-                <div className="flex flex-wrap justify-center gap-4">
+                <h2 className="text-center text-white text-[18px] md:text-[24px] font-bold pb-1">Students of {singleTeacherData.name}</h2>
+                <div className="flex flex-wrap justify-center gap-4 pb-5">
                     {studentOfTeacher.length > 0 ? ( studentOfTeacher.map(student => <StudentCard key={student.id} item={student} />)) : (<p className="text-black">Student yuq</p>)}
                 </div>
             </div>
